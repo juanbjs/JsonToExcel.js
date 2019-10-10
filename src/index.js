@@ -7,9 +7,11 @@ let rowsHeader = [
 ];
 
 let rowsData = [
-  { a : 'Ejemplo de dato de columna1', b : 'Ejemplo de dato de columna2', c : 'Ejemplo de dato de columna3', }
+  { 
+    a : 'Ejemplo de dato de columna1', 
+    b : 'Ejemplo de dato de columna2', 
+    c : 'Ejemplo de dato de columna3', 
+  }
 ]
 
-console.log(`Start`);
 jsonToExcel(rowsHeader, rowsData, "Archivo Ejemplo")
-console.log(`End`);

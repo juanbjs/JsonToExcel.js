@@ -1,0 +1,75 @@
+{
+  "name": "jsontoexcel.js",
+  "version": "1.0.0",
+  "description": "This Library converts JSON to .xlsx",
+  "main": "index.js",
+  "repository": "git+https://github.com/juanbjs/JsonToExcel.js.git",
+  "keywords": [
+    "JS",
+    "Excel",
+    "JSON",
+    "Node"
+  ],
+  "author": "Juan Zarate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juanbjs/JsonToExcel.js/issues"
+  },
+  "homepage": "https://github.com/juanbjs/JsonToExcel.js#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "xlsx": "^0.15.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "eslint": "^6.5.1",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-node": "^10.0.0",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "nodemon": "^1.19.3",
+    "prettier": "^1.18.2"
+  },
+  "scripts": {
+    "build": "babel src -d dist --source-maps",
+    "serve": "node dist/index.js",
+    "start": "babel-node src/index.js",
+    "start:dev": "nodemon src/index.js --exec babel-node",
+    "test": "jest --runInBand --verbose",
+    "coverage": "jest --coverage --runInBand --verbose",
+    "eslint": "eslint src/**/*.js --ignore-pattern \"node_modules/\""
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": true
+          }
+        }
+      ]
+    ]
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "node",
+      "jest"
+    ],
+    "env": {
+      "jest/globals": true,
+      "node": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2018
+    }
+  }
+}

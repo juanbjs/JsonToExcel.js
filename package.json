@@ -18,7 +18,7 @@
   "homepage": "https://github.com/juanbjs/JsonToExcel.js#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "xlsx": "^0.15.1"
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",

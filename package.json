@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/juanbjs/JsonToExcel.js#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "xlsx": "^0.17.0"
   },
   "devDependencies": {
